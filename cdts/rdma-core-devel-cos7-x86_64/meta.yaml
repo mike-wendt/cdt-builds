@@ -37,7 +37,12 @@ about:
   home: https://github.com/linux-rdma/rdma-core
   license: GPLv2 or BSD
   license_family: GPL2
-  license_file: {{ SRC_DIR }}/binary/usr/share/doc/rdma-core-22.4.2/COPYING
+  license_file:
+    - rdma-core-copyright.txt
+    - rdma-core-bsd-fb.txt
+    - rdma-core-bsd-mit.txt
+    - rdma-core-gpl2.txt
+
   summary: "(CDT) RDMA core development libraries and headers"
   description: |
         RDMA core development libraries and headers.
