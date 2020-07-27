@@ -483,6 +483,10 @@ python-javapackages:
   custom: false
   skipped_cdts:
     - cos6-x86_64
+rdma-core:
+  custom: false
+rdma-core-devel:
+  custom: false
 webkitgtk:
   custom: false
   skipped_cdts:
