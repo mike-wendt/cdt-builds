@@ -22,16 +22,16 @@ build:
 requirements:
   build:
     - libibverbs-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
-    - libumad-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
+    - libibumad-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - librdmacm-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
   host:
     - libibverbs-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
-    - libumad-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
+    - libibumad-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - librdmacm-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - sysroot_linux-64 2.17.*
   run:
     - libibverbs-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
-    - libumad-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
+    - libibumad-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - librdmacm-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - sysroot_linux-64 2.17.*
 
