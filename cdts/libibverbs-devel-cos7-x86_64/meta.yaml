@@ -3,7 +3,7 @@ package:
   version: 22.4.2
 
 source:
-  - url: hhttp://mirror.centos.org/centos/7/updates/x86_64/Packages/rdma-core-devel-22.4-2.el7_8.x86_64.rpm
+  - url: http://mirror.centos.org/centos/7/updates/x86_64/Packages/rdma-core-devel-22.4-2.el7_8.x86_64.rpm
     sha256: 7a6930d4bf8bf67216491192315a8b18230c7db4e5dd029bad326ad541d201fc
     no_hoist: true
     folder: binary
