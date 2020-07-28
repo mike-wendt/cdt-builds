@@ -1,0 +1,49 @@
+package:
+  name: libibumad
+  version: 22.4.2
+
+source:
+  - url: http://mirror.centos.org/centos/7/updates/x86_64/Packages/libibumad-22.4-2.el7_8.x86_64.rpm
+    sha256: c7c8e20574fd143c5af84a997916d4a81a4224b2aee7ea26634ca953a23cc41c
+    no_hoist: true
+    folder: binary
+  # - url: http://vault.centos.org/7.7.1908/updates/Source/SPackages/rdma-core-22.4-2.el7_8.src.rpm
+  #   no_hoist: true
+  #   folder: source
+
+build:
+  number: {{ cdt_build_number|int + 1000 }}
+  noarch: generic
+  binary_relocation: false
+  detect_binary_files_with_prefix: false
+  missing_dso_whitelist:
+    - '*'
+
+requirements:
+  host:
+    - sysroot_linux-64 2.17.*
+  run:
+    - sysroot_linux-64 2.17.*
+
+test:
+  commands:
+    - echo "it installs!"
+
+about:
+  home: https://github.com/linux-rdma/rdma-core
+  license: GPLv2 or BSD
+  license_family: GPL2
+  license_file:
+    - rdma-core-copyright.txt
+    - rdma-core-bsd-fb.txt
+    - rdma-core-bsd-mit.txt
+    - rdma-core-gpl2.txt
+  summary: "(CDT) Development files for the libibumad library"
+  description: |
+        libibumad provides the userspace management datagram (umad) library
+        functions, which sit on top of the umad modules in the kernel. These
+        are used by the IB diagnostic and management tools, including OpenSM.
+
+extra:
+  recipe-maintainers:
+    - conda-forge/help-cdts
