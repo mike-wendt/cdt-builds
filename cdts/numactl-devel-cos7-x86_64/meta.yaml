@@ -22,11 +22,14 @@ build:
 requirements:
   build:
     - numactl-cos7-x86_64 ==2.0.12 *_{{ cdt_build_number|int + 1000 }}
+    - numactl-libs-cos7-x86_64 ==2.0.12 *_{{ cdt_build_number|int + 1000 }}
   host:
     - numactl-cos7-x86_64 ==2.0.12 *_{{ cdt_build_number|int + 1000 }}
+    - numactl-libs-cos7-x86_64 ==2.0.12 *_{{ cdt_build_number|int + 1000 }}
     - sysroot_linux-64 2.17.*
   run:
     - numactl-cos7-x86_64 ==2.0.12 *_{{ cdt_build_number|int + 1000 }}
+    - numactl-libs-cos7-x86_64 ==2.0.12 *_{{ cdt_build_number|int + 1000 }}
     - sysroot_linux-64 2.17.*
 
 test:
