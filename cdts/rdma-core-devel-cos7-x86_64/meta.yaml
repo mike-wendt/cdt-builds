@@ -25,6 +25,7 @@ requirements:
     - ibacm-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - libibumad-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - libibverbs-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
+    - libnl3-devel-cos7-x86_64 ==3.2.28 *_{{ cdt_build_number|int + 1000 }}
     - librdmacm-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - librdmacm-devel-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     
@@ -33,6 +34,7 @@ requirements:
     - ibacm-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - libibumad-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - libibverbs-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
+    - libnl3-devel-cos7-x86_64 ==3.2.28 *_{{ cdt_build_number|int + 1000 }}
     - librdmacm-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - librdmacm-devel-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - sysroot_linux-64 2.17.*
@@ -41,6 +43,7 @@ requirements:
     - ibacm-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - libibumad-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - libibverbs-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
+    - libnl3-devel-cos7-x86_64 ==3.2.28 *_{{ cdt_build_number|int + 1000 }}
     - librdmacm-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - librdmacm-devel-cos7-x86_64 ==22.4.2 *_{{ cdt_build_number|int + 1000 }}
     - sysroot_linux-64 2.17.*
